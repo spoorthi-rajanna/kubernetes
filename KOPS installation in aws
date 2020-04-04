@@ -35,6 +35,12 @@ updated these two vars in .bashrc & .profile in ~ dir.
 export KOPS_CLUSTER_NAME=advith.k8s.local
 export KOPS_STATE_STORE=s3://kops-state-advith-bucket
 
+export KOPS_CLUSTER_NAME=useast1.dev.example.com
+export KOPS_STATE_STORE=s3://clustersk8s.dev.example.com
+
+root@ip-172-31-34-120:~# vi ~/.bashrc
+root@ip-172-31-34-120:~# vi ~/.profile
+
 
 7. Create cluster:: -- This will actually prepare the configuration files.
 kops create cluster \
